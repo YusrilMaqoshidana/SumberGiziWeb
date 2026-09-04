@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Primary - Soy Green */
+  --color-brand-50: #F3F7F3;
+  --color-brand-100: #E5EEE6;
+  --color-brand-200: #CBDDCE;
+  --color-brand-300: #A8C2AB;
+  --color-brand-400: #759D7C;
+  --color-brand-500: #4F7C59;
+  --color-brand-600: #416749;
+  --color-brand-700: #35533B;
+  --color-brand-800: #293F2E;
+  --color-brand-900: #1F3023;
+
+  /* Neutrals */
+  --color-neutral-bg: #F8FAF8;
+  --color-neutral-surface: #FFFFFF;
+  --color-neutral-surface-alt: #F1F4F1;
+  --color-neutral-primary: #172019;
+  --color-neutral-secondary: #5F6961;
+  --color-neutral-muted: #879088;
+  --color-neutral-border: #DDE3DE;
+  --color-neutral-divider: #E8ECE8;
+
+  /* Semantics */
+  --color-semantic-success: #3F8F5F;
+  --color-semantic-success-bg: #EDF7F0;
+  --color-semantic-warning: #C58A28;
+  --color-semantic-warning-bg: #FFF7E8;
+  --color-semantic-danger: #C94A4A;
+  --color-semantic-danger-bg: #FCEEEE;
+  --color-semantic-info: #3978A8;
+  --color-semantic-info-bg: #EEF6FC;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F8FAF8;
+  --foreground: #172019;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
